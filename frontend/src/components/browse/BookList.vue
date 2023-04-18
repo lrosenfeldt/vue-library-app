@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, toRef } from 'vue'
 import type { Book } from '@/types'
 import FilterModal from '@/components/browse/FilterModal.vue'
 import IconFunnel from '@/components/icons/IconFunnnel.vue'
@@ -11,7 +11,7 @@ const props = defineProps<{ books: Book[] }>()
 
 const showFilterModal = ref(false)
 
-const filteredBooks = ref(props.books)
+const filteredBooks = ref(toRef(props, 'books'))
 
 function filterBooks(filterSettings: FilterSettings) {
   if (filterSettings.onlyAvailable) {
