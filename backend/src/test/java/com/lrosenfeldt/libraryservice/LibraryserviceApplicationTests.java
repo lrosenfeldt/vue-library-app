@@ -1,10 +1,10 @@
-package com.lrosenfeldt.restservice;
+package com.lrosenfeldt.libraryservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RestserviceApplicationTests {
+class LibraryserviceApplicationTests {
 
 	@Test
 	void contextLoads() {

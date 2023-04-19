@@ -1,4 +1,4 @@
-package com.lrosenfeldt.restservice;
+package com.lrosenfeldt.libraryservice;
 
 import java.util.ArrayList;
 import java.util.List;
